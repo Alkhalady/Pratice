@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: DM sans-serif;
+}
+
+/* header section */
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    display: none;
+}
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.menu{
+    display: block;
+}
+.signin-btn{
+    display: none;
+}
+
+/* end of header section */
+
+/* hero section */
+
+
+.hero > h1{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #1E0E62;
+}
+
+.hero p{
+    display: flex;
+    color: #15143966;
+    justify-content: center;
+    margin: 30px;
+    font-weight: medium;
+}
+
+.purchase{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 110px;
+    padding: 10px 20px;
+    border-radius: 999px;
+    background-color: #25DAC5;
+    opacity: 0.9;
+    color: #fff;
+    border: 1px solid;
+
+    transition: background-color 1s,
+    color 1s;
+}
+ 
+.purchase:hover{
+    background-color: #fff;
+    color: #25DAC5;
+}
+
+.learn-more{
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        color: #25DAC5;
+}
+
+/* end of hero section */
+
+/* responsiveness */
+
+@media (min-width: 768px) {
+     
+    *{
+    box-sizing: border-box;
+    font-family: DM sans-serif;
+}
+
+.menu{
+    display: none;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    gap: 530px;
+}
+
+.nav,ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: #15143966;
+    
+}
+
+
+li{
+    list-style: none;
+}
+
+.signin-btn{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.signin1{
+    color: #15143966;
+    opacity: 0.8;
+}
+.signin2{
+    color: #FFFFFF;
+    background-color: #25DAC5;
+    border-radius: 999px;
+    padding: 5px 10px;
+    border: 1px solid;
+    cursor: pointer;
+
+    transition: background-color 1s,
+    color 1s;
+}
+ 
+
+.signin2:hover{
+    background-color: #fff; 
+    color: #25DAC5 ;
+}
+
+.signin2:active{
+    opacity: 0.5;
+}
+
+.purchase{
+    justify-content: center;
+    margin-left: 690px;
+}
+
+ 
+}
+
+@media 
